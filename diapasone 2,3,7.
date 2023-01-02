@@ -1,0 +1,76 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+void main()
+{
+    int start, end;
+    cout << "Start of range start : ";
+    cin >> start;
+    cout << "End of diapason : ";
+    cin >> end;
+    if (start < end)
+    {
+        cout << "Diapason : " << endl;
+        for (int i = start; i <= end; i++)
+        {
+            cout << i << endl;
+        }
+        cout << "Couples : " << endl;
+        for (int i = start; i <= end; i++)
+        {
+            if (i % 2 == 0)
+            {
+                cout << i << endl;
+            }
+        }
+        cout << "Not Couples : " << endl;
+        for (int i = start; i <= end; i++)
+        {
+            if (i % 2 != 0)
+            {
+                cout << i << endl;
+            }
+        }
+        cout << "multiples of 7 : " << endl;
+        for (int i = start; i <= end; i++)
+        {
+            if (i % 7 == 0)
+            {
+                cout << i << endl;
+            }
+        }
+    }
+    else if (end < start)
+    {
+        cout << "Diapazon : " << endl;
+        for (int i = start; i >= end; i--)
+        {
+            cout << i << endl;
+        }
+        cout << "Couples : " << endl;
+        for (int i = start; i >= end; i--)
+        {
+            if (i % 2 == 0)
+            {
+                cout << i << endl;
+            }
+        }
+        cout << "Ne parni : " << endl;
+        for (int i = start; i >= end; i--)
+        {
+            if (i % 2 != 0)
+            {
+                cout << i << endl;
+            }
+        }
+        cout << "Couples 7 : " << endl;
+        for (int i = start; i >= end; i--)
+        {
+            if (i % 7 == 0)
+            {
+                cout << i << endl;
+            }
+        }
+    }
+}
